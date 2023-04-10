@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <h1>EECS 348 Lab Seven Practice Two</h1>
+</head>
+
+
+<style>
+    #paragraph {
+        border-style: solid;
+        border-width: 5px;
+    }
+</style>
+
+
+<script>
+        function colorChange(){
+                var red_border = document.getElementById("red_border").value;
+                var green_border = document.getElementById("green_border").value;
+                var blue_border = document.getElementById("blue_border").value;
+                var border_width = document.getElementById("border_width").value;
+                var red_background = document.getElementById("red_background").value;
+                var green_background = document.getElementById("green_background").value;
+                var blue_background = document.getElementById("blue_background").value;
+
+                var t = document.getElementById("paragraph");
+                t.style.borderColor = `rgb(${red_border},${green_border},${blue_border})`;
+                t.style.borderWidth = border_width;
+                t.style.backgroundColor = `rgb(${red_background},${green_background},${blue_background})`;
+
+        }
+
+</script>
+
+
+<body>
+    <div id="paragraph">
+
+
+        This is the text box that will be altered by whatever values are passed into the boxes below
+
+    </div>
+
+    Border Red(0-255): <input type="text" id="red_border" value=""> <br>
+    Border Green(0-255): <input type="text" id="green_border" value=""> <br>
+    Border Blue(0-255): <input type="text" id="blue_border" value=""> <br>
+    Border Width: <input type="text" id="border_width" value=""> <br>
+    Background Red(0-255): <input type="text" id="red_background" value=""> <br>
+    Background Green(0-255): <input type="text" id="green_background" value=""> <br>
+    Background Blue(0-255): <input type="text" id="blue_background" value=""> <br>
